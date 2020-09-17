@@ -1,0 +1,29 @@
+.containing {
+    background: beige;
+    width: 100vw;
+    height: 100vh;
+
+    &-body {
+        display: block;
+        width: 400px;
+        height: 160px;
+        background: lightgray;
+        // transform: perspective(10px);
+        // contain: content;
+        // will-change: perspective
+        // filter: drop-shadow(2px 4px 6px black);
+    }
+
+    &-content {
+        position: absolute;
+        width: 50%;
+        /* == 400px * .5 = 200px */
+        height: 25%;
+        /* == 160px * .25 = 40px */
+        margin: 5%;
+        /* == 400px * .05 = 20px */
+        padding: 5%;
+        /* == 400px * .05 = 20px */
+        background: cyan;
+    }
+}

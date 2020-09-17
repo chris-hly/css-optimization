@@ -1,0 +1,33 @@
+p {
+    background-color: yellow;
+
+    &>span {
+        color: red
+    }
+}
+
+p[type='chris'] {
+    background-color: gray;
+    &>span {
+        color: white
+    }
+}
+
+.specificity {
+    background-color: red !important;
+    &>span {
+        color: yellow
+    }
+}
+
+
+#specificity {
+    background-color: greenyellow;
+    &>span {
+        color: wheat
+    }
+}
+
+// :not(p){
+//     color: aqua;
+// }

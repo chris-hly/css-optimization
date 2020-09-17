@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: #cfc;
+    justify-content: end; // justify-content  控制主轴（横轴）上所有 flex 项目的对齐。
+    // align-items: center; // align-items 控制交叉轴（纵轴）上所有 flex 项目的对齐。
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // flex-flow: row wrap;
+    // flex-basis: 100px;
+
+    // &-child {
+
+    // }
+
+    // &-child-1 {
+    //     flex-basis: 100px;
+    // // }
+    &>* {
+        background-color: aquamarine;
+    }
+
+    &>*:first-child {
+        height: 40px;
+        width: 50px // align-self: end; // 控制交叉轴（纵轴）上的单个 flex 项目的对齐。 start end stretch center
+    }
+
+    &>*:last-child {
+        height: 60px;
+        width: 40px;
+        // align-self: stretch; // 控制交叉轴（纵轴）上的单个 flex 项目的对齐。
+        // align-content: space-between
+    }
+
+}
